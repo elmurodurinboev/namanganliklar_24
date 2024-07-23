@@ -1,2 +1,247 @@
 @import './fonts.css';
-@import './normalize.css'
+@import './normalize.css';
+
+/* Common styles */
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #434343;
+}
+
+*:focus {
+  outline: 0;
+  box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4);
+}
+
+
+/* CONTAINER */
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* Main LOGO style */
+.logo {
+  display: flex;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.025);
+}
+
+.logo:focus {
+  box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4);
+}
+
+
+/* SITE-HEADER */
+
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 40px;
+  padding-bottom: 23px;
+  border-top: 4px solid #295093;
+  background-color: #F6F6F9;
+}
+
+.site-header__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.site-header__logo {
+  margin-right: 17px;
+}
+
+.site-header__exchange-rates {
+  margin-right: 17px;
+}
+
+.site-header__actions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.site-header__search-button {
+  margin-right: 22px;
+}
+
+.site-header__language-toggler {
+  margin-right: 24px;
+}
+
+.site-header__toggler {
+  display: none;
+}
+
+/* EXCHANGE-RATES */
+.exchange-rates {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  color: #7A7A7A;
+}
+
+.exchange-rates__item:not(:last-child) {
+  margin-right: 26px;
+}
+
+.exchange-rates__icon {
+  color: #285193;
+}
+
+/* SEARCH-BUTTON */
+.search-button {
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-button__wrapper {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LANGUAGE-TOGGLER */
+.language-toggler {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.language-toggler__wrapper {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.language-toggler__img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.search-button:hover,
+.language-toggler:hover {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* TELEGRAM-SUB */
+.telegram-sub {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.telegram-sub--dark {
+  color: #fff;
+  background-color: #1E96C8;
+  background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+}
+
+.telegram-sub:hover {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.telegram-sub--dark:hover {
+  background-color: #37AEE2;
+  background-image: linear-gradient(90deg, #37AEE2 15.07%, #1E96C8 85.96%);
+}
+
+.telegram-sub--white {
+  background-color: #fff;
+  color: #295093;
+}
+
+.telegram-sub__img {
+  margin-right: 7px;
+}
+
+.telegram-sub__text {
+  font-weight: 500;
+}
+
+/* SITENAV */
+.sitenav {
+  margin-bottom: 18px;
+  border-radius: 5px;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 500;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+}
+
+.sitenav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 12px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sitenav__item {
+  margin: 5px 12px;
+}
+
+.sitenav__link {
+  display: block;
+  color: #515151;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sitenav__link:hover,
+.sitenav__item--active .sitenav__link {
+  color: #295091;
+}
+
+/* TOP-BANNER */
+.top-banner__link {
+  display: flex;
+}
